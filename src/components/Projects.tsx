@@ -34,7 +34,7 @@ export default function Projects() {
         "Responsiv va zamonaviy dizayn. GitHub orqali jamoa bo'lib yaratilgan bo'lib. Lucide ikonlar sahifaga estetik ko'rinish bergan",
       link: "https://8-oy-8-dars-psi.vercel.app/",
       codeLink: "https://github.com/mustafo-coder/8-oy-8-dars",
-      usedStacks: ["nextjs", "lucide", "tailwindcss"],
+      usedStacks: ["github", "nextjs", "lucide", "tailwindcss"],
     },
   ];
 

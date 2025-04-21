@@ -17,7 +17,7 @@ export function ProjectCard({
   usedStacks,
 }: ProjectCardT) {
   return (
-    <div className=" shadow-2xl hover:shadow-xl transition">
+    <div className=" shadow-xl hover:shadow-2xl transition">
       <div className="w-full h-[360px] overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
         <iframe
           src={link}

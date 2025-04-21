@@ -26,9 +26,9 @@ export default function Navbar() {
         <a href={"#projects"}>
           <p className="text-lg leading-[32px] font-medium">Loyihalar</p>
         </a>
-        <Link href={"/"}>
+        {/* <Link href={"/"}>
           <p className="text-lg leading-[32px] font-medium">Men haqimda</p>
-        </Link>
+        </Link> */}
         <a href={"/resume.pdf"} target="_blank" rel="noopener noreferrer">
           <p className="text-lg leading-[32px] font-medium">Rezyume</p>
         </a>

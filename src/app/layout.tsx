@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="uz" className="scroll-smooth">
       <body
         className={`${inter.variable} ${sora.variable} antialiased scroll-smooth`}
       >

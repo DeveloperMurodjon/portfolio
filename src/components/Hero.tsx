@@ -9,7 +9,7 @@ function Hero() {
         Salom, Men Isroiljonov Murodjon.
       </h1>
       <h2 className="text-[32px] text-secondary mt-32px font-bold leading-[48px] py-8">
-        Front-end Developer
+        Front-end Dasturchi
       </h2>
       <p className="text-[24px] leading-9 tracking-tight text-black-text">
         Always learning and growing in the world of web development.
