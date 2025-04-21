@@ -12,7 +12,7 @@ export default function Navbar() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
   return (
-    <div className="container flex justify-between items-center pt-[74px] pb-[14px]">
+    <div className="sticky top-4 bg-white z-50 shadow-sm rounded-3xl container flex justify-between items-center mt-[16px] pt-1  pb-[10px]">
       <Link href={"/"}>
         <h3 className="font-bold text-5xl leading-[56px] space-x-[-1px]">
           mi<span className="text-purple">.</span>
@@ -21,16 +21,16 @@ export default function Navbar() {
 
       <div className="flex items-center gap-[30px]">
         <Link href={"/"}>
-          <p className="text-lg leading-[32px] font-medium">Home</p>
+          <p className="text-lg leading-[32px] font-medium">Bosh sahifa</p>
         </Link>
+        <a href={"#projects"}>
+          <p className="text-lg leading-[32px] font-medium">Loyihalar</p>
+        </a>
         <Link href={"/"}>
-          <p className="text-lg leading-[32px] font-medium">Projects</p>
-        </Link>
-        <Link href={"/"}>
-          <p className="text-lg leading-[32px] font-medium">About</p>
+          <p className="text-lg leading-[32px] font-medium">Men haqimda</p>
         </Link>
         <a href={"/resume.pdf"} target="_blank" rel="noopener noreferrer">
-          <p className="text-lg leading-[32px] font-medium">Resume</p>
+          <p className="text-lg leading-[32px] font-medium">Rezyume</p>
         </a>
 
         <button
