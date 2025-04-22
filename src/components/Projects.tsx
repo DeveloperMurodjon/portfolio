@@ -7,8 +7,8 @@ export default function Projects() {
       title: "Portfolio",
       description:
         "O'z portfolio saytim, unda ceo va performansni oshirish uchun eng so'ngi texnalogiyaardan foidalanganman",
-      link: "https://developermurodjon.vercel.app/",
-      codeLink: "https://murodojonisroiljonovportfolio.vercel.app/",
+      link: "https://murodojonisroiljonovportfolio.vercel.app/",
+      codeLink: "https://github.com/DeveloperMurodjon/portfolio",
       usedStacks: ["typescript", "nextjs", "tailwindcss"],
     },
     {
