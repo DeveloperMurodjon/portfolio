@@ -31,14 +31,28 @@ export function ProjectCard({
           loading="lazy"
         ></iframe>
       </div>
-      <div className="p-4 space-y-2">
-        <h3 className="text-[28px] leading-[36px] space-x-[0.25px] text-[#121212] font-bold mb-1">
+      <div className="px-4 space-y-2 ">
+        <h3 className="text-[28px] leading-[36px] space-x-[0.25px] text-[#121212] font-bold pt-6 pb-4">
           {title}
         </h3>
         <p className="text-[#525252] text-base leading-6 space-x-[0.25px]">
           {description}
         </p>
-        <div className="flex gap-4 mt-2">
+
+        <div className="flex gap-2 py-6 ">
+          {usedStacks.map((stack) => (
+            <DynamicImage
+              key={stack}
+              name={stack}
+              mode="light"
+              state="default"
+              alt={stack}
+              width={44}
+              height={44}
+            />
+          ))}
+        </div>
+        <div className="flex gap-4 pb-7">
           <a
             href={link}
             target="_blank"
@@ -55,19 +69,6 @@ export function ProjectCard({
           >
             Kodni ko'rish
           </a>
-        </div>
-        <div className="flex gap-2 mt-4">
-          {usedStacks.map((stack) => (
-            <DynamicImage
-              key={stack}
-              name={stack}
-              mode="light"
-              state="default"
-              alt={stack}
-              width={44}
-              height={44}
-            />
-          ))}
         </div>
       </div>
     </div>
