@@ -39,7 +39,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="py-[180px]" id="projects">
+    <section className="py-[180px]" id="projects">
       <h2 className="font-sora font-bold text-[56px] leading-[70px] space-x-[-1px] text-center pb-[114px]">
         Loyihalar
       </h2>
@@ -48,6 +48,6 @@ export default function Projects() {
           <ProjectCard key={i} {...project} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
