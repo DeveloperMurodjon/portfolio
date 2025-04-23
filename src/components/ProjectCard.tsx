@@ -18,7 +18,7 @@ export function ProjectCard({
 }: ProjectCardT) {
   return (
     <div className=" shadow-xl hover:shadow-2xl transition">
-      <div className="w-full h-[360px] overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
+      <div className="w-full  overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]  h-[360px]">
         <iframe
           src={link}
           width="1440"
@@ -31,7 +31,7 @@ export function ProjectCard({
           loading="lazy"
         ></iframe>
       </div>
-      <div className="px-4 space-y-2 ">
+      <div className="space-y-2 px-4 ">
         <h3 className="text-[28px] leading-[36px] space-x-[0.25px] text-[#121212] font-bold pt-6 pb-4">
           {title}
         </h3>
