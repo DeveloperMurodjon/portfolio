@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <div className="flex flex-col items-start pt-[148px] pb:[50px] md:items-center md:pt-[120px] md:pb-[120px]">
+    <div className="flex flex-col items-start pt-[148px] pb:[50px] pb-[74px] md:items-center md:pt-[375px] md:pb-[120px]">
       <h1 className=" font-bold font-sora space-x-[-1px] text-[#262626] text-[32px] leading-[48px] md:text-[56px] md:leading-[70px] ">
         Salom, Men Isroiljonov Murodjon.
       </h1>
