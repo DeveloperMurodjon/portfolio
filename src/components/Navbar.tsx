@@ -13,7 +13,7 @@ export default function Navbar() {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className="sticky top-4 bg-white z-50 shadow-sm rounded-3xl container flex justify-between items-center mt-[16px] pt-1  pb-[10px]">
+    <div className="sticky top-10 md:top-4 bg-white z-50 shadow-sm rounded-3xl container flex justify-between items-center mt-[16px] pt-1  pb-[10px]">
       <Link href={"/"}>
         <h3 className="text-[32px] font-bold md:text-5xl md:leading-[56px] space-x-[-1px] ">
           mi<span className="text-purple">.</span>
