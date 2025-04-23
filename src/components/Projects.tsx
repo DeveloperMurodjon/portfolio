@@ -43,7 +43,7 @@ export default function Projects() {
       <h2 className="font-sora font-bold text-[56px] leading-[70px] space-x-[-1px] text-center pb-[114px]">
         Loyihalar
       </h2>
-      <div className="grid grid-cols-2 gap-[70px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-[70px]">
         {projects.map((project, i) => (
           <ProjectCard key={i} {...project} />
         ))}
