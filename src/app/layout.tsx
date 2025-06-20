@@ -1,6 +1,5 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
-import { LanguageProvider } from '@/context/LanguageContext'
 import type { Metadata } from 'next'
 import { Inter, Sora } from 'next/font/google'
 import './globals.css'
@@ -32,11 +31,9 @@ export default function RootLayout({
 			<body
 				className={` ${sora.variable} ${inter.variable} antialiased scroll-smooth`}
 			>
-				<LanguageProvider>
-					<Navbar />
-					{children}
-					<Footer />
-				</LanguageProvider>
+				<Navbar />
+				{children}
+				<Footer />
 			</body>
 		</html>
 	)
