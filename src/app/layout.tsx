@@ -1,38 +1,43 @@
-import type { Metadata } from "next";
-import { Inter, Sora } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
+import { LanguageProvider } from '@/context/LanguageContext'
+import type { Metadata } from 'next'
+import { Inter, Sora } from 'next/font/google'
+import './globals.css'
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
+	variable: '--font-inter',
+	subsets: ['latin'],
+})
 
 const sora = Sora({
-  variable: "--font-sora",
-  subsets: ["latin"],
-});
+	variable: '--font-sora',
+	subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Murodjon Isroiljonovning portfoliosi",
-};
+	title: 'Murodjon Isroiljonov Portfolio',
+	description: 'Murodjon Isroiljonovning portfoliosi',
+	icons: {
+		icon: '/favicon.svg',
+	},
+}
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode
 }>) {
-  return (
-    <html lang="uz" className="scroll-smooth">
-      <body
-        className={`${inter.variable} ${sora.variable} antialiased scroll-smooth`}
-      >
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
-  );
+	return (
+		<html lang='uz' className='scroll-smooth'>
+			<body
+				className={` ${sora.variable} ${inter.variable} antialiased scroll-smooth`}
+			>
+				<LanguageProvider>
+					<Navbar />
+					{children}
+					<Footer />
+				</LanguageProvider>
+			</body>
+		</html>
+	)
 }

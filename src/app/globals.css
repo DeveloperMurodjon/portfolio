@@ -1,28 +1,29 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @utility container {
-  padding-inline: 20px;
-  margin-inline: auto;
-  max-width: 1179px;
+	padding-inline: 20px;
+	margin-inline: auto;
+	max-width: 1179px;
 }
 html,
 body {
-  scroll-behavior: smooth;
+	font-family: var(--font-inter), sans-serif;
+	scroll-behavior: smooth;
 }
 :root {
-  --purple: #7c3aed;
-  --purple500: #8b5cf6;
-  --secondary: #4c1d95;
-  --black-text: #2d3436;
-  --neutral: #171717;
+	--purple: #7c3aed;
+	--purple500: #8b5cf6;
+	--secondary: #4c1d95;
+	--black-text: #2d3436;
+	--neutral: #171717;
 }
 
 @theme inline {
-  --font-inter: var(--font-inter);
-  --font-sora: var(--font-sora);
-  --color-purple: var(--purple);
-  --color-secondary: var(--secondary);
-  --color-purple500: var(--purple500);
-  --color-black-text: var(--black-text);
-  --color-neutral: var(--neutral);
+	--font-inter: var(--font-inter);
+	--font-sora: var(--font-sora);
+	--color-purple: var(--purple);
+	--color-secondary: var(--secondary);
+	--color-purple500: var(--purple500);
+	--color-black-text: var(--black-text);
+	--color-neutral: var(--neutral);
 }
