@@ -1,3 +1,9 @@
+# *
 User-agent: *
 Allow: /
-Sitemap: https://developermurodjon.vercel.app/sitemap.xml
+
+# Host
+Host: https://isroiljonov.uz
+
+# Sitemaps
+Sitemap: https://isroiljonov.uz/sitemap.xml
