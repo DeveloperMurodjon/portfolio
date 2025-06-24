@@ -40,7 +40,7 @@ export default function Projects() {
 
 	return (
 		<section className='py-[100px] md:py-[180px]' id='projects'>
-			<h2 className='font-sora font-bold  space-x-[-1px] text-center  pb-[31px] text-[28px] leading-9 md:pb-[114px] md:text-[56px] md:leading-[70px]'>
+			<h2 className='font-sora font-bold  space-x-[-1px] text-center  pb-[31px] text-[28px] leading-9 md:pb-[114px] md:text-[56px] md:leading-[70px] '>
 				Loyihalar
 			</h2>
 			<div className='grid grid-cols-1 gap-[30px] md:grid-cols-2 md:gap-[70px]'>

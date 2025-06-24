@@ -18,7 +18,7 @@ export function ProjectCard({
 }: ProjectCardT) {
 	return (
 		<div className=' shadow-xl hover:shadow-2xl transition'>
-			<div className='w-full  overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]  h-[360px]'>
+			<div className='w-full  overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]  h-[360px] dark:border dark:border-neutral600 dark:shadow-none'>
 				<iframe
 					src={link}
 					width='1440'
@@ -32,10 +32,10 @@ export function ProjectCard({
 				></iframe>
 			</div>
 			<div className='space-y-2 px-4 '>
-				<h3 className='text-[28px] leading-[36px] space-x-[0.25px] text-[#121212] font-bold pt-6 pb-4'>
+				<h3 className='text-[28px] leading-[36px] space-x-[0.25px] text-[#121212] font-bold pt-6 pb-4 dark:text-white '>
 					{title}
 				</h3>
-				<p className='text-[#525252] text-base leading-6 space-x-[0.25px]'>
+				<p className='text-[#525252] text-base leading-6 space-x-[0.25px] dark:text-neutral200'>
 					{description}
 				</p>
 
@@ -57,7 +57,7 @@ export function ProjectCard({
 						href={link}
 						target='_blank'
 						rel='noopener noreferrer'
-						className='bg-[#8B5CF6] font-bold text-sm leading-6 space-x-[2%] text-center  uppercase py-2.5 px-4 text-white rounded-[5px]'
+						className='bg-[#8B5CF6] font-bold text-sm leading-6 space-x-[2%] text-center  uppercase py-2.5 px-4 text-white rounded-[5px] dark:text-neutral900 dark:bg-purple200'
 					>
 						Ko'rib chiqish
 					</a>
@@ -65,7 +65,7 @@ export function ProjectCard({
 						href={codeLink}
 						target='_blank'
 						rel='noopener noreferrer'
-						className='border border-[#8B5CF6] font-bold text-sm leading-6 space-x-[2%] text-center  uppercase py-2.5 px-4 text-[#171717] rounded-[5px]'
+						className='border border-[#8B5CF6] font-bold text-sm leading-6 space-x-[2%] text-center  uppercase py-2.5 px-4 text-[#171717] rounded-[5px] dark:border-neutral500 dark:text-neutral50'
 					>
 						Kodni ko'rish
 					</a>

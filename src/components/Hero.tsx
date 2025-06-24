@@ -1,16 +1,15 @@
-'use client'
 import DynamicImage from './DynamicImage'
 
 function Hero() {
 	return (
 		<div className='flex flex-col items-start pt-[14px] pb:[50px] pb-[74px] md:items-center md:pt-[100px] md:pb-[80px]'>
-			<h1 className=' font-bold font-sora space-x-[-1px] text-[#262626] text-[32px] leading-[48px] md:text-[56px] md:leading-[70px] '>
+			<h1 className=' font-bold font-sora space-x-[-1px] text-[#262626] text-[32px] leading-[48px] md:text-[56px] md:leading-[70px] dark:text-neutral50'>
 				Salom, Men Isroiljonov Murodjon.
 			</h1>
-			<h2 className=' text-secondary font-bold mt-[5px] text-[28px] leading-[36px] md:mt-32px md:leading-[48px] md:py-8 md:text-[32px]'>
+			<h2 className=' text-purple900 font-bold mt-[5px] text-[28px] leading-[36px] md:mt-32px md:leading-[48px] md:py-8 md:text-[32px] dark:text-purple300'>
 				Front-end Dasturchi
 			</h2>
-			<p className=' tracking-tight text-black-text  text-base leading-6 mt-[29px] md:text-[24px] md:leading-9'>
+			<p className=' tracking-tight text-black-text  text-base leading-6 mt-[29px] md:text-[24px] md:leading-9 dark:text-neutral100'>
 				Always learning and growing in the world of Information Technologies.
 			</p>
 			<div className='flex items-center gap-[10px] mt-[31px]  md:gap-[25px] md:mt-8'>
@@ -50,7 +49,7 @@ function Hero() {
 					rel='noopener noreferrer'
 					title='Menga email yuboring'
 				>
-					<p className='whitespace-nowrap text-neutral font-bold space-x-[2%] border border-purple500 rounded-[5px] items-center flex uppercase text-xs leading-[22px] py-2 px-[10px]  md:text-sm md:leading-[24px] md:py-2.5 md:px-4'>
+					<p className='whitespace-nowrap text-neutral font-bold space-x-[2%] border border-purple500 rounded-[5px] items-center flex uppercase text-xs leading-[22px] py-2 px-[10px]  md:text-sm md:leading-[24px] md:py-2.5 md:px-4 dark:text-neutral50 dark:border-neutral500'>
 						Men bilan bog'laning
 					</p>
 				</a>
@@ -62,7 +61,7 @@ function Hero() {
 					rel='noopener noreferrer'
 					title="Resumeni ko'rib chiqing"
 				>
-					<p className='text-neutral font-bold  space-x-[2%] border border-purple500 rounded-[5px] items-center flex uppercase text-xs leading-[22px] py-2 px-[10px] md:text-sm md:leading-[24px] md:py-2.5 md:px-4 '>
+					<p className='text-neutral font-bold  space-x-[2%] border border-purple500 rounded-[5px] items-center flex uppercase text-xs leading-[22px] py-2 px-[10px] md:text-sm md:leading-[24px] md:py-2.5 md:px-4 dark:text-neutral50 dark:border-neutral500'>
 						resume
 					</p>
 				</a>

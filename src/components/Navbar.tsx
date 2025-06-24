@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import DynamicImage from './DynamicImage'
 import LanguageSwitcher from './LanguageSwitcher'
+import { ModeToggle } from './ModeToggle'
 
 export default function Navbar() {
 	const [imageState, setImageState] = useState<
@@ -14,9 +15,9 @@ export default function Navbar() {
 	const [open, setOpen] = useState<boolean>(false)
 
 	return (
-		<div className='sticky top-6 md:top-10 bg-white z-50 shadow-sm rounded-3xl container flex justify-between items-center mt-[16px] pt-1  pb-[10px]'>
+		<div className='sticky top-6 md:top-10 bg-white z-50 shadow-sm rounded-3xl container flex justify-between items-center mt-[16px] pt-1  pb-[10px] dark:bg-neutral'>
 			<Link href={'/'}>
-				<h3 className='text-[32px] font-bold md:text-5xl md:leading-[56px] space-x-[-1px] '>
+				<h3 className='text-[32px] font-bold md:text-5xl md:leading-[56px] space-x-[-1px] dark:#FAFAFA'>
 					mi<span className='text-purple'>.</span>
 				</h3>
 			</Link>
@@ -34,20 +35,7 @@ export default function Navbar() {
 				<a href={'/resume.pdf'} target='_blank' rel='noopener noreferrer'>
 					<p className='text-lg leading-[32px] font-medium'>Rezyume</p>
 				</a>
-
-				<button
-					onClick={() => setImageName(imageName == 'sun' ? 'moon' : 'sun')}
-					onMouseEnter={() => setImageState('hover')}
-					onMouseLeave={() => setImageState('default')}
-					className='cursor-pointer'
-				>
-					<DynamicImage
-						name={imageName}
-						mode={theme}
-						state={imageState}
-						alt='theme'
-					/>
-				</button>
+				<ModeToggle />
 			</div>
 			<div className='md:hidden'>
 				<button onClick={() => setOpen(!open)} className='flex flex-col gap-1'>

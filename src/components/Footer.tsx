@@ -61,7 +61,7 @@ function Footer() {
 				</div>
 			</div>
 
-			<h4 className='text-neutral-600 text-base  leading-6 pt-[59px]'>
+			<h4 className='text-neutral-600 text-base  leading-6 pt-[59px] dark:text-neutral300'>
 				© Coded by Developer Murodjon
 			</h4>
 		</div>
