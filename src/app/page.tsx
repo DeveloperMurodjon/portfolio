@@ -4,14 +4,13 @@ import Projects from '@/components/Projects'
 
 function Home() {
 	return (
-		<div className='container scroll-smooth flex flex-col items-center'>
+		<div className='container min-h-screen scroll-smooth flex flex-col items-center'>
 			<Hero />
 			<a href='#projects'>
 				<button className='cursor-pointer'>
 					<DynamicImage
 						name='arrow-down'
-						mode='light'
-						state='default'
+						initialState='default'
 						alt='go down'
 					/>
 				</button>

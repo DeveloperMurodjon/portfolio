@@ -17,8 +17,8 @@ export function ProjectCard({
 	usedStacks,
 }: ProjectCardT) {
 	return (
-		<div className=' shadow-xl hover:shadow-2xl transition'>
-			<div className='w-full  overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]  h-[360px] dark:border dark:border-neutral600 dark:shadow-none'>
+		<div className='bg-white shadow-xl hover:shadow-2xl transition dark:bg-neutral900'>
+			<div className='w-full overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] h-[360px] dark:border dark:border-neutral600  dark:shadow-none'>
 				<iframe
 					src={link}
 					width='1440'
@@ -44,8 +44,7 @@ export function ProjectCard({
 						<DynamicImage
 							key={stack}
 							name={stack}
-							mode='light'
-							state='default'
+							initialState='default'
 							alt={stack}
 							width={44}
 							height={44}
