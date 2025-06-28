@@ -26,7 +26,7 @@ function Footer() {
 							rel='noopener noreferrer'
 							title='Menga email yuboring'
 						>
-							<DynamicImage name='mail' initialState='active' alt='mail' />
+							<DynamicImage name='mail' initialState='primary' alt='mail' />
 						</a>
 						<a
 							href='https://github.com/DeveloperMurodjon'
